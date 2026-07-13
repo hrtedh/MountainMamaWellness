@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Mountain Mama Wellness Inc. — Hormone health, weight management, gut health, and supplementation support for women with 20+ years of wellness expertise." />
+  <title>Mountain Mama Wellness Inc.</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="config/links.js"></script>
+  <style>
+    @keyframes spin {
+      from {
+        transform: rotate(0deg)
+      }
+
+      to {
+        transform: rotate(360deg)
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+
+      <div class="site-logo">
+        <span class="brand">Mountain Mama Wellness</span>
+        <span class="tagline">Hormone Health &amp; Nutrition</span>
+      </div>
+
+      <nav class="header-nav" role="navigation" aria-label="Main navigation">
+        <button id="nav-home" class="nav-link active" data-section="section-home" aria-label="Home">Home</button>
+        <button id="nav-podcast" class="nav-link" aria-label="Podcast — opens in new tab">Podcast</button>
+        <button id="nav-zoom" class="nav-link" aria-label="Zoom Available — opens in new tab">Zoom Available</button>
+        <button id="nav-supplementation" class="nav-link"
+          aria-label="Supplementation — opens in new tab">Supplementation</button>
+        <button id="nav-assessment" class="nav-link assessment-btn" data-section="section-assessment"
+          aria-label="Health Assessment">Health Assessment</button>
+      </nav>
+
+      <div class="header-social" aria-label="Social media links">
+        <a id="social-facebook" href="#" target="_blank" rel="noopener noreferrer" class="social-icon"
+          aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
+        </a>
+      </div>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+      <button class="nav-link active" data-section="section-home">Home</button>
+      <button id="nav-podcast-mobile" class="nav-link">Podcast</button>
+      <button id="nav-zoom-mobile" class="nav-link">Zoom Available</button>
+      <button id="nav-supplementation-mobile" class="nav-link">Supplementation</button>
+      <button class="nav-link assessment-btn" data-section="section-assessment">Health Assessment</button>
+      <div class="mobile-social">
+        <a id="social-facebook-mobile" href="#" target="_blank" rel="noopener noreferrer" class="social-icon"
+          aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
+        </a>
+        <a id="social-instagram-mobile" href="#" target="_blank" rel="noopener noreferrer" class="social-icon"
+          aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <!-- HOME SECTION -->
+    <section id="section-home" class="page-section active" aria-label="About Kristy">
+      <div class="home-layout">
+
+        <div class="home-image-wrap">
+          <img src="images/image.jpg" alt="Kristy Cirami — Mountain Mama Wellness" />
+        </div>
+
+        <div class="home-content">
+          <p class="eyebrow">Hormone Health &amp; Nutritionist</p>
+          <h1>Mountain Mama<br><em>Wellness Inc.</em></h1>
+
+          <p class="home-intro">
+            Created from a deep desire to offer women a safe, supportive space to heal — without pressure or feeling
+            overwhelmed.
+            With 20+ years in the wellness space, I support women through:
+          </p>
+
+          <ul class="support-list">
+            <li><span>Hormone health</span></li>
+            <li><span>Weight management</span></li>
+            <li><span>Supplementation</span></li>
+            <li><span>Gut health</span></li>
+            <li><span>Feeling like themselves again</span></li>
+          </ul>
+
+          <p class="home-story">
+            My journey has taken me from traditional healthcare to my office in the mountains.
+          </p>
+
+          <p class="home-story">
+            I host a podcast and Wellness Wednesday educational Zooms, built to educate and empower women
+            around what wellness really looks like.
+          </p>
+
+          <div class="credentials-card">
+            <div class="cred-name">Kristy Cirami NDTR</div>
+            <div class="cred-title">
+              Hormone Health Registered Nutritionist<br>
+              Certified in Weight Management, Supplementation &amp; Gut Health
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HEALTH ASSESSMENT SECTION -->
+    <section id="section-assessment" class="page-section" aria-label="Health Assessment Form">
+
+      <div class="form-page-header">
+        <p class="eyebrow">Let's Get Started</p>
+        <h2>Your Health Assessment</h2>
+        <p>Take a few minutes to share where you are on your wellness journey. I will review your responses
+          personally and reach out to support you.</p>
+      </div>
+
+      <div id="form-success" class="success-message" role="status" aria-live="polite">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+        </div>
+        <h3>Assessment Received!</h3>
+        <p>Thank you for sharing. Kristy will be in touch with you soon to discuss your wellness journey.</p>
+      </div>
+
+      <form id="health-assessment-form" class="assessment-form" novalidate>
+
+        <input type="hidden" name="access_key" value="44dc2cae-4f67-4c07-9275-cd785fb11579" />
+        <input type="hidden" name="subject" value="New Health Assessment — Mountain Mama Wellness" />
+        <input type="hidden" name="from_name" value="Mountain Mama Wellness Website" />
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <!-- CONTACT INFO -->
+        <div class="form-card">
+          <h3 class="form-card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            Contact Information
+          </h3>
+
+          <div class="contact-row">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Full Name <span style="color:var(--sage)">*</span></label>
+              <input id="contact-name" name="Full Name" class="form-input" type="text" required
+                placeholder="Your full name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-age">Age</label>
+              <input id="contact-age" name="Age" class="form-input" type="number" min="18" max="100"
+                placeholder="Your age" />
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Email Address <span
+                  style="color:var(--sage)">*</span></label>
+              <input id="contact-email" name="Email" class="form-input" type="email" required
+                placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-phone">Phone Number</label>
+              <input id="contact-phone" name="Phone" class="form-input" type="tel" placeholder="(555) 000-0000" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-preferred">Preferred Way to be Contacted</label>
+            <div class="form-select-wrap">
+              <select id="contact-preferred" name="Preferred Contact Method" class="form-select">
+                <option value="">Select a preference...</option>
+                <option value="Email">Email</option>
+                <option value="Phone / Text">Phone / Text</option>
+                <option value="Either">Either is fine</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- ENERGY -->
+        <div class="form-card">
+          <h3 class="form-card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+            Energy
+          </h3>
+
+          <div class="form-group">
+            <label class="form-label" for="energy-description">How would you describe your energy throughout the
+              day?</label>
+            <textarea id="energy-description" name="Energy Description" class="form-textarea"
+              placeholder="Describe your typical energy levels..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Do you experience an afternoon energy crash?</label>
+            <div class="toggle-group" role="group" aria-label="Afternoon energy crash">
+              <button type="button" class="toggle-btn selected">
+                <input type="radio" name="Afternoon Energy Crash" value="Yes" checked hidden> Yes
+              </button>
+              <button type="button" class="toggle-btn">
+                <input type="radio" name="Afternoon Energy Crash" value="No" hidden> No
+              </button>
+              <button type="button" class="toggle-btn">
+                <input type="radio" name="Afternoon Energy Crash" value="Sometimes" hidden> Sometimes
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Do you rely on caffeine to get through the day?</label>
+            <div class="toggle-group" role="group" aria-label="Caffeine reliance">
+              <button type="button" class="toggle-btn selected">
+                <input type="radio" name="Relies on Caffeine" value="Yes" checked hidden> Yes
+              </button>
+              <button type="button" class="toggle-btn">
+                <input type="radio" name="Relies on Caffeine" value="No" hidden> No
+              </button>
+              <button type="button" class="toggle-btn">
+                <input type="radio" name="Relies on Caffeine" value="Sometimes" hidden> Sometimes
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLEEP -->
+        <div class="form-card">
+          <h3 class="form-card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            Sleep
+          </h3>
+
+          <div class="form-group">
+            <label class="form-label" for="sleep-hours">How many hours of sleep do you typically get each night?</label>
+            <div class="form-select-wrap">
+              <select id="sleep-hours" name="Hours of Sleep" class="form-select">
+                <option value="">Select...</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5–6 hours">5–6 hours</option>
+                <option value="6–7 hours">6–7 hours</option>
+                <option value="7–8 hours">7–8 hours</option>
+                <option value="More than 8 hours">More than 8 hours</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Do you fall asleep easily?</label>
+            <div class="toggle-group" role="group" aria-label="Falls asleep easily">
+              <button type="button" class="toggle-btn selected">
+                <input type="radio" name="Falls Asleep Easily" value="Yes" checked hidden> Yes
+              </button>
+              <button type="button" class="toggle-btn">
+                <input type="radio" name="Falls Asleep Easily" value="No" hidden> No
+              </button>
+              <button type="button" class="toggle-btn">
+                <input type="radio" name="Falls Asleep Easily" value="Sometimes" hidden> Sometimes
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Do you stay asleep through the night?</label>
+            <div class="toggle-group" role="group" aria-label="Stays asleep through night">
+              <button type="button" class="toggle-btn selected">
+                <input type="radio" name="Stays Asleep" value="Yes" checked hidden> Yes
+              </button>
+              <button type="button" class="toggle-btn">
+                <input type="radio" name="Stays Asleep" value="No" hidden> No
+              </button>
+              <button type="button" class="toggle-btn">
+                <input type="radio" name="Stays Asleep" value="Sometimes" hidden> Sometimes
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Do you wake up feeling rested?</label>
+            <div class="toggle-group" role="group" aria-label="Wakes up rested">
+              <button type="button" class="toggle-btn selected">
+                <input type="radio" name="Wakes Up Rested" value="Yes" checked hidden> Yes
+              </button>
+              <button type="button" class="toggle-btn">
+                <input type="radio" name="Wakes Up Rested" value="No" hidden> No
+              </button>
+              <button type="button" class="toggle-btn">
+                <input type="radio" name="Wakes Up Rested" value="Sometimes" hidden> Sometimes
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIGESTION -->
+        <div class="form-card">
+          <h3 class="form-card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 2a10 10 0 1 0 10 10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+            Digestion
+          </h3>
+
+          <div class="form-group">
+            <label class="form-label" for="digestion-description">How would you describe your digestion?</label>
+            <textarea id="digestion-description" name="Digestion Description" class="form-textarea"
+              placeholder="Describe your typical digestive health..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Do you experience any of the following? <span class="sub">Check all that
+                apply</span></label>
+            <div class="check-grid">
+              <label class="check-option">
+                <input type="checkbox" name="Digestion Symptoms" value="Bloating" />
+                <span>Bloating</span>
+              </label>
+              <label class="check-option">
+                <input type="checkbox" name="Digestion Symptoms" value="Gas" />
+                <span>Gas</span>
+              </label>
+              <label class="check-option">
+                <input type="checkbox" name="Digestion Symptoms" value="Constipation" />
+                <span>Constipation</span>
+              </label>
+              <label class="check-option">
+                <input type="checkbox" name="Digestion Symptoms" value="Diarrhea" />
+                <span>Diarrhea</span>
+              </label>
+              <label class="check-option">
+                <input type="checkbox" name="Digestion Symptoms" value="Heartburn / Reflux" />
+                <span>Heartburn / Reflux</span>
+              </label>
+              <label class="check-option">
+                <input type="checkbox" name="Digestion Symptoms" value="None" />
+                <span>None of the above</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- HORMONE HEALTH -->
+        <div class="form-card">
+          <h3 class="form-card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v4l3 3" />
+            </svg>
+            Hormone Health
+          </h3>
+
+          <div class="form-group">
+            <label class="form-label">Where are you currently in your hormone journey?</label>
+            <div class="radio-group" role="group" aria-label="Hormone journey stage">
+              <label class="radio-option">
+                <input type="radio" name="Hormone Journey Stage" value="Regular menstrual cycles" />
+                <span>Regular menstrual cycles</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="Hormone Journey Stage" value="Perimenopause" />
+                <span>Perimenopause (cycles or symptoms beginning to change)</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="Hormone Journey Stage" value="Menopause" />
+                <span>Menopause (12+ months without a period)</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="Hormone Journey Stage" value="Post-menopause" />
+                <span>Post-menopause</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="Hormone Journey Stage" value="Unsure" />
+                <span>Unsure</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Current symptoms <span class="sub">Check all that apply</span></label>
+            <div class="check-group">
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms"
+                  value="Irregular or changing menstrual cycles" /><span>Irregular or changing menstrual
+                  cycles</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms"
+                  value="Heavy periods" /><span>Heavy periods</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms" value="Hot flashes" /><span>Hot
+                  flashes</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms"
+                  value="Night sweats" /><span>Night sweats</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms"
+                  value="Sleep changes" /><span>Sleep changes</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms"
+                  value="Mood changes or anxiety" /><span>Mood changes or anxiety</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms"
+                  value="Brain fog or difficulty concentrating" /><span>Brain fog or difficulty
+                  concentrating</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms"
+                  value="Fatigue or low energy" /><span>Fatigue or low energy</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms"
+                  value="Weight changes or difficulty losing weight" /><span>Weight changes or difficulty losing
+                  weight</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms"
+                  value="Increased cravings" /><span>Increased cravings</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms"
+                  value="Bloating or digestive changes" /><span>Bloating or digestive changes</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms"
+                  value="Breast tenderness" /><span>Breast tenderness</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms" value="Low libido" /><span>Low
+                  libido</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms"
+                  value="Joint aches or stiffness" /><span>Joint aches or stiffness</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms"
+                  value="Hair thinning or changes" /><span>Hair thinning or changes</span></label>
+              <label class="check-option"><input type="checkbox" name="Hormone Symptoms"
+                  value="Skin changes" /><span>Skin changes</span></label>
+              <label class="check-option">
+                <input id="check-other" type="checkbox" name="Hormone Symptoms" value="Other" />
+                <span>Other</span>
+              </label>
+            </div>
+            <div id="other-symptom-input" class="other-input">
+              <input type="text" name="Other Symptom" class="form-input" placeholder="Please describe..." />
+            </div>
+          </div>
+        </div>
+
+        <!-- HORMONE HISTORY -->
+        <div class="form-card">
+          <h3 class="form-card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+              <line x1="4" y1="22" x2="4" y2="15" />
+            </svg>
+            Hormone History
+          </h3>
+
+          <div class="form-group">
+            <label class="form-label" for="last-period">When was your last menstrual period?</label>
+            <input id="last-period" name="Last Menstrual Period" class="form-input" type="text" placeholder="" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cycle-changes">Have you noticed changes in your cycle, flow, or
+              symptoms?</label>
+            <textarea id="cycle-changes" name="Cycle Changes" class="form-textarea"
+              placeholder="Describe any changes you have noticed..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Have you ever used hormone therapy or birth control?</label>
+            <div class="toggle-group" role="group" aria-label="Hormone therapy or birth control history">
+              <button type="button" class="toggle-btn selected">
+                <input type="radio" name="Hormone Therapy History" value="Yes" checked hidden> Yes
+              </button>
+              <button type="button" class="toggle-btn">
+                <input type="radio" name="Hormone Therapy History" value="No" hidden> No
+              </button>
+              <button type="button" class="toggle-btn">
+                <input type="radio" name="Hormone Therapy History" value="Currently using" hidden> Currently Using
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="hormone-testing">Have you had hormone testing done?</label>
+            <textarea id="hormone-testing" name="Hormone Testing Results" class="form-textarea"
+              placeholder="If yes, please share results or what was tested..."></textarea>
+          </div>
+        </div>
+
+        <!-- GOALS -->
+        <div class="form-card">
+          <h3 class="form-card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="6" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+            Your Goals
+          </h3>
+
+          <div class="form-group">
+            <label class="form-label" for="goal-hormone-concern">What is your biggest hormone-related concern right
+              now?</label>
+            <textarea id="goal-hormone-concern" name="Biggest Hormone Concern" class="form-textarea"
+              placeholder="Share what is most weighing on you..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="goal-improve">What would you most like to improve about your health?</label>
+            <textarea id="goal-improve" name="Most Wanted Health Improvement" class="form-textarea"
+              placeholder="Describe what changes matter most to you..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="goal-best-self">What would feeling like your best self look like?</label>
+            <textarea id="goal-best-self" name="Best Self Vision" class="form-textarea"
+              placeholder="Paint a picture of how you want to feel..."></textarea>
+          </div>
+        </div>
+
+        <!-- SUBMIT -->
+        <div class="form-submit-wrap">
+          <button type="submit" class="submit-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M22 2L11 13" />
+              <path d="M22 2L15 22l-4-9-9-4 20-7z" />
+            </svg>
+            Submit Assessment
+          </button>
+          <p class="submit-note">Your information is confidential and will only be reviewed by Kristy.</p>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="footer-year"></span> Mountain Mama Wellness &mdash; All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js" defer></script>
+
+</body>
+
+</html>
